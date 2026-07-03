@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -19,14 +20,14 @@
     </header>
     <section class="hero">
         <div class="hero_text">
-            <p class="small">AVAILABLE FOR WORK</p>
+            <p class="small">Available for Internship</p>
             <h1>Designing Digital Systems with Technical Precision.</h1>
             <p class="desc">
             I build simple and clean web interfaces using modern technologies.
             </p>
 
-            <div class="buttons">
-            <button class="primary">View Projects</button>
+            <div class="button">
+            <button class ="primary" id="viewprojects">View Projects</button>
             </div>
         </div>
 
@@ -72,12 +73,18 @@
       <img src="photos/image (healio).jpeg" alt="">
       <h3>Healio</h3>
       <p>Multi-Clinic Booking Appointment System</p>
+      <a href="https://afnancs.github.io/Healio_Project" target="_blank">
+           <button class="primary">Live Demo</button>
+      </a>
     </div>
 
     <div class="card">
       <img src="photos/image (portfolio).jpeg" alt="">
       <h3>Portfolio Website</h3>
       <p>Personal portfolio single page website</p>
+      <a href="https://afnancs.github.io/My_Portfolio/" target="_blank">
+           <button class="primary">Live Demo</button>
+      </a>
     </div>
 
   </div>
@@ -85,14 +92,63 @@
 
 
 <section class="contact" id="contact">
-  <h2>Contact Me</h2>
 
-  <input type="text" placeholder="Your Name">
-  <input type="email" placeholder="Your Email">
-  <textarea placeholder="Your Message"></textarea>
+<h2>Contact Me</h2>
 
-  <button>Send Message</button>
+<form action="https://formsubmit.co/afnanahmedcs@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_subject" value="New Portfolio Message">
+
+<button type="submit" class="primary">
+Send Message
+</button>
+
+</form>
+
 </section>
-    
+
+
+<footer>
+
+  <h3>Let's Connect</h3>
+  <div>
+  <a href="https://www.linkedin.com/in/afnan-ahmed-49ab1728b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1H9DN4SYiB/" target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+  <a href="mailto:afnanahmedcs@gmail.com" target="_blank">
+   <i class="fa-solid fa-envelope"></i>
+  </a>
+  <a href="https://github.com/afnancs" target="_blank">
+   <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://www.instagram.com/afnan_ahmed_28?igsh=OHBwbmt2a2o5OGg5" target="_blank">
+   <i class="fa-brands fa-instagram"></i>
+  </a>
+  </div>
+
+<a href="Afnan_Ahmed_CV.pdf" download>
+<button class="download-btn">Download CV</button>
+</a>
+
+  <p>© 2026 Afnan Ahmed</p>
+  <p>Frontend Developer</p>
+  <p>Built with using HTML • CSS • JavaScript</p>
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script src="script.js"></script>
+
 </body>
 </html>
